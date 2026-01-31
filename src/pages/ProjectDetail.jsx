@@ -63,7 +63,6 @@ function ProjectDetail() {
         <h1 className="project-title">{project.title}</h1>
 
         <div className="project-detail-grid">
-          {/* Screenshots */}
           <div>
             <h2 className='project-preview'>Aperçu du projet</h2>
             <div className="screenshots">
@@ -83,7 +82,6 @@ function ProjectDetail() {
             </div>
           </div>
 
-          {/* Description et infos */}
           <div className="project-info">
             <h2>À propos</h2>
             <p>
@@ -107,7 +105,6 @@ function ProjectDetail() {
             </button>
           </div>
         </div>
-        {/* Mobile CTA shown under the two sections on portrait/small screens */}
         <div className="mobile-cta">
           <button
             className="btn primary project-cta show-on-mobile"
@@ -118,7 +115,6 @@ function ProjectDetail() {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
       {selectedImage && (
         <div 
           className="lightbox-overlay"

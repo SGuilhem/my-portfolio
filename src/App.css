@@ -18,7 +18,6 @@ h2::after {
   border-radius: 2px;
 }
 
-/* Layout Core */
 .container {
   max-width: 1200px;
   margin: 0 auto;

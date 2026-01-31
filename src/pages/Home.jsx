@@ -78,11 +78,10 @@ function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
       <section className="section">
         <div className="container flex rows">
-            <div className="w-3/5">
-          <h2>À propos de moi</h2>
+          <div className="w-3/5">
+            <h2>À propos de moi</h2>
             <div>
               <p>
                 Développeur front-end avec 3 ans d'expérience, passionné par le
@@ -94,7 +93,7 @@ function Home() {
                 personnel.
               </p>
             </div>
-            </div>
+          </div>
           <div className="hero-avatar2">
             <div className="avatar-wrapper2">
               <img
@@ -107,7 +106,6 @@ function Home() {
         </div>
       </section>
 
-      {/* MON PARCOURS */}
       <section className="section">
         <div className="container">
           <h2>Mon Parcours</h2>
@@ -138,7 +136,6 @@ function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
       <section className="section" id="projects">
         <div className="container">
           <h2>Mes projets Personnels</h2>
@@ -189,7 +186,6 @@ function Home() {
         </div>
       </section>
 
-      {/* SKILLS */}
       <section className="section">
         <div className="container">
           <h2>Compétences</h2>
@@ -204,12 +200,18 @@ function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
       <section className="section" id="contact">
         <div className="container">
           <h2>Contact</h2>
           <p>Un projet en tête ? Discutons-en !</p>
-          <button className="btn secondary">Me contacter</button>
+          <button
+            className="btn secondary"
+            onClick={() => {
+              window.location.href = "mailto:guilhemsaclier@gmail.com";
+            }}
+          >
+            Me contacter
+          </button>
         </div>
       </section>
     </>
