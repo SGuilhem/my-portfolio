@@ -88,7 +88,7 @@ function Home() {
                 web et l'univers du digital. Curieux de nature, j'aime découvrir
                 de nouvelles cultures à travers mes voyages, notamment en Asie,
                 où j'ai développé un goût particulier pour la gastronomie
-                locale. En dehors du code, je pratique le judo depuis presque 20
+                locale. En dehors du code, je pratique le judo depuis bientôt 20
                 ans (ceinture noire) et me lance dans le triathlon par défi
                 personnel.
               </p>
@@ -110,12 +110,12 @@ function Home() {
         <div className="container">
           <h2>Mon Parcours</h2>
           <p>
-            J'ai débuté ma carrière en tant que technicien son après avoir
-            validé un titre professionnel à l'Infa de Nogent-sur-Marne, en
-            alternance à l'ESRA. J'y faisais partie d'une petite équipe
+            J'ai débuté ma carrière professionnelle en tant que technicien son après avoir
+            validé un Titre professionnel à l'Infa de Nogent-sur-Marne, en
+            alternance à l'ESRA. Je faisais partie d'une petite équipe
             technique chargée de la gestion du matériel audiovisuel, de la
             maintenance des studios et du réseau informatique de l'école (plus
-            de 120 ordinateurs), ainsi que du support pédagogique auprès des
+            de 120 ordinateurs aux usages et besoins différents), ainsi que du support pédagogique auprès des
             étudiants et professeurs. <br />
             <br />
             Par la suite, j'ai participé à la création d'une boutique de
@@ -130,8 +130,8 @@ function Home() {
             <br />
             Ensuite, j'ai rejoint Volatil, où je suis intervenu sur des missions
             de sous-traitance pour Philip Morris International. J'y ai
-            approfondi mes compétences en front-end et affiné ma manière de
-            collaborer au sein d'équipes agiles et exigeantes.
+            approfondi mes compétences en front-end (notament en VueJS) et affiné ma manière de
+            collaborer au sein d'équipes agiles (méthodologie SCRUM) et exigeantes.
           </p>
         </div>
       </section>
