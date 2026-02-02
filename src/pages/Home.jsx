@@ -90,7 +90,7 @@ function Home() {
                 de nouvelles cultures à travers mes voyages, notamment en Asie,
                 où j'ai développé un goût particulier pour la gastronomie
                 locale. En dehors du code, je pratique le judo depuis bientôt 20
-                ans (ceint ure noire) et me lance dans le triathlon par défi
+                ans (ceinture noire) et me lance dans le triathlon par défi
                 personnel.
               </p>
             </div>

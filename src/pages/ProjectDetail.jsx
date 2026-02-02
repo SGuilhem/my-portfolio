@@ -1,32 +1,35 @@
-import { useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import pronosJudo1 from '../assets/Thumbnails/PronosJudo1.png';
-import pronosJudo2 from '../assets/Thumbnails/PronosJudo2.png';
-import pronosJudo3 from '../assets/Thumbnails/PronosJudo3.png';
-import interbudo1 from '../assets/Thumbnails/Interbudo1.png';
-import interbudo2 from '../assets/Thumbnails/Interbudo2.png';
-import interbudo3 from '../assets/Thumbnails/Interbudo3.png';
-import '../App.css';
+import { useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import pronosJudo1 from "../assets/Thumbnails/PronosJudo1.png";
+import pronosJudo2 from "../assets/Thumbnails/PronosJudo2.png";
+import pronosJudo3 from "../assets/Thumbnails/PronosJudo3.png";
+import interbudo1 from "../assets/Thumbnails/Interbudo1.png";
+import interbudo2 from "../assets/Thumbnails/Interbudo2.png";
+import interbudo3 from "../assets/Thumbnails/Interbudo3.png";
+import "../App.css";
 
 const projectsData = {
-  'pronos-judo': {
-    title: 'Pronos Judo',
-    description: `Pronos Judo est une ligue de pronostics dédiée au judo. 
-Les utilisateurs peuvent créer des prédictions sur les résultats des combats de judo 
-en utilisant les données en temps réel de l'API IJF (International Judo Federation). 
-Le projet intègre un système de scoring, un classement et des statistiques pour les participants.`,
-    technologies: ['VueJS', 'JavaScript', 'NodeJS', 'API REST', 'Tailwind CSS'],
-    link: 'https://pronos-judo.onrender.com/',
+  "pronos-judo": {
+    title: "Pronos Judo",
+    description: [
+      "Pronos Judo est une ligue de pronostics dédiée au judo.",
+      "J’ai développé cette application à la suite d’une ligue de pronostics que nous organisions chaque année entre membres de mon club lors des Championnats du monde et d'Europe. Ces pronostics étaient jusque-là gérés via Google Docs, une solution peu pratique et difficile à maintenir.",
+      "L’application permet aux utilisateurs de prédire chaque jour les podiums des catégories prévues le lendemain. Les listes de judokas sélectionnables pour chaque catégorie sont alimentées automatiquement grâce à l’API officielle de la Fédération Internationale de Judo (IJF), qui fournit les combattants engagés pour chaque édition de compétition.",
+      "À l’issue de chaque journée, des points sont attribués à chaque participant en fonction de la justesse de ses pronostics, et un classement général est mis à jour en temps réel.",
+    ],
+    technologies: ["VueJS", "JavaScript", "NodeJS", "API REST", "Tailwind CSS"],
+    link: "https://pronos-judo.onrender.com/",
     screenshots: [pronosJudo1, pronosJudo2, pronosJudo3],
   },
-  'interbudo': {
-    title: 'Site du Club de Judo - Interbudo',
-    description: `Interbudo est un site vitrine créé pour un club de judo local. 
-Il présente les horaires des entraînements, les informations sur les ceintures, 
-les événements du club et les photos de l'équipe. C'est un projet complet alliant 
-design moderne et informations pratiques pour les membres du club.`,
-    technologies: [ 'VueJS', 'HTML', 'CSS', 'JavaScript', 'Tailwind CSS'],
-    link: 'https://sguilhem.github.io/interbudo/',
+  interbudo: {
+    title: "Site du Club de Judo - Interbudo",
+    description: [
+      "Interbudo est un site vitrine créé pour un club de judo local.",
+      "Il présente les horaires, les lieux des entraînements, les informations sur les dirigeants, les professeurs, les modalités d'inscription, calendriers du club, les parteinaires et les contacts.",
+      "les événements du club et les photos de l'équipe. C'est un projet complet alliant design moderne et informations pratiques pour les membres du club.",
+    ],
+    technologies: ["VueJS", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
+    link: "https://sguilhem.github.io/interbudo/",
     screenshots: [interbudo1, interbudo2, interbudo3],
   },
 };
@@ -42,7 +45,7 @@ function ProjectDetail() {
       <section className="section">
         <div className="container">
           <h1>Projet non trouvé</h1>
-          <button className="btn primary" onClick={() => navigate('/')}>
+          <button className="btn primary" onClick={() => navigate("/")}>
             Retour à l'accueil
           </button>
         </div>
@@ -53,10 +56,7 @@ function ProjectDetail() {
   return (
     <section className="section">
       <div className="container">
-        <button
-          className="btn secondary"
-          onClick={() => navigate('/')}
-        >
+        <button className="btn secondary" onClick={() => navigate("/")}>
           ← Retour
         </button>
 
@@ -64,14 +64,14 @@ function ProjectDetail() {
 
         <div className="project-detail-grid">
           <div>
-            <h2 className='project-preview'>Aperçu du projet</h2>
+            <h2 className="project-preview">Aperçu du projet</h2>
             <div className="screenshots">
               {project.screenshots.map((screenshot, idx) => (
-                <div 
-                  key={idx} 
+                <div
+                  key={idx}
                   className="screenshot-card"
                   onClick={() => setSelectedImage(screenshot)}
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: "pointer" }}
                 >
                   <img
                     src={screenshot}
@@ -84,11 +84,18 @@ function ProjectDetail() {
 
           <div className="project-info">
             <h2>À propos</h2>
-            <p>
-              {project.description}
-            </p>
+            {project.description.map((paragraph, index) => (
+              <p
+                key={index}
+                style={{ marginBottom: "16px", lineHeight: "1.8" }}
+              >
+                {paragraph}
+              </p>
+            ))}
 
-            <h3 style={{ marginTop: '24px', marginBottom: '12px' }}>Technologies utilisées</h3>
+            <h3 style={{ marginTop: "24px", marginBottom: "12px" }}>
+              Technologies utilisées
+            </h3>
             <div className="project-tech">
               {project.technologies.map((tech, idx) => (
                 <span key={idx} className="tech-badge">
@@ -99,7 +106,7 @@ function ProjectDetail() {
 
             <button
               className="btn primary project-cta hide-on-mobile"
-              onClick={() => window.open(project.link, '_blank')}
+              onClick={() => window.open(project.link, "_blank")}
             >
               Voir le projet en direct
             </button>
@@ -108,7 +115,7 @@ function ProjectDetail() {
         <div className="mobile-cta">
           <button
             className="btn primary project-cta show-on-mobile"
-            onClick={() => window.open(project.link, '_blank')}
+            onClick={() => window.open(project.link, "_blank")}
           >
             Voir le projet en direct
           </button>
@@ -116,19 +123,19 @@ function ProjectDetail() {
       </div>
 
       {selectedImage && (
-        <div 
+        <div
           className="lightbox-overlay"
           onClick={() => setSelectedImage(null)}
         >
           <div className="lightbox-content">
-            <button 
+            <button
               className="lightbox-close"
               onClick={() => setSelectedImage(null)}
             >
               ✕
             </button>
-            <img 
-              src={selectedImage} 
+            <img
+              src={selectedImage}
               alt="Screenshot en grand"
               className="lightbox-image"
             />
