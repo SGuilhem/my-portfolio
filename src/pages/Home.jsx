@@ -11,6 +11,7 @@ import restAPILogo from "../assets/logos/rest-api-logo.png";
 import githubLogo from "../assets/logos/github-logo.png";
 import responsiveDesignLogo from "../assets/logos/responsive-design-logo.png";
 import tailwindLogo from "../assets/logos/tailwind-logo.png";
+import linkedinLogo from "../assets/logos/LinkedIn-logo.png";
 import "../App.css";
 
 function Home() {
@@ -89,7 +90,7 @@ function Home() {
                 de nouvelles cultures à travers mes voyages, notamment en Asie,
                 où j'ai développé un goût particulier pour la gastronomie
                 locale. En dehors du code, je pratique le judo depuis bientôt 20
-                ans (ceinture noire) et me lance dans le triathlon par défi
+                ans (ceint ure noire) et me lance dans le triathlon par défi
                 personnel.
               </p>
             </div>
@@ -109,30 +110,89 @@ function Home() {
       <section className="section">
         <div className="container">
           <h2>Mon Parcours</h2>
-          <p>
-            J'ai débuté ma carrière professionnelle en tant que technicien son après avoir
-            validé un Titre professionnel à l'Infa de Nogent-sur-Marne, en
-            alternance à l'ESRA. Je faisais partie d'une petite équipe
-            technique chargée de la gestion du matériel audiovisuel, de la
-            maintenance des studios et du réseau informatique de l'école (plus
-            de 120 ordinateurs aux usages et besoins différents), ainsi que du support pédagogique auprès des
-            étudiants et professeurs. <br />
-            <br />
-            Par la suite, j'ai participé à la création d'une boutique de
-            maintenance informatique et de réparation de smartphones à
-            Bruxelles, une expérience entrepreneuriale enrichissante. <br />
-            <br />
-            De retour à Paris pendant le confinement, j'ai profité de cette
-            période pour me reconvertir vers le développement web via la
-            formation de développeur web junior d'OpenClassRooms. Cette
-            transition m'a permis de consolider mes bases techniques et de
-            retrouver le plaisir de construire des projets concrets. <br />
-            <br />
-            Ensuite, j'ai rejoint Volatil, où je suis intervenu sur des missions
-            de sous-traitance pour Philip Morris International. J'y ai
-            approfondi mes compétences en front-end (notament en VueJS) et affiné ma manière de
-            collaborer au sein d'équipes agiles (méthodologie SCRUM) et exigeantes.
-          </p>
+
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <span className="timeline-date">
+                  Novembre 2021 — Décembre 2024
+                </span>
+                <h3>Développeur Front-End · Volatil</h3>
+                <span className="timeline-place">
+                  Mission Philip Morris International · Paris
+                </span>
+
+                <ul className="timeline-list">
+                  <li>
+                    Conception et développement d’interfaces{" "}
+                    <strong>Vue.js</strong> orientées performance, UI/UX et
+                    scalabilité (B2C / B2B)
+                  </li>
+                  <li>
+                    Maintenance évolutive : gestion de bugs, optimisation
+                    front-end, refactoring et amélioration continue
+                  </li>
+                  <li>
+                    Contribution à un <strong>Design System</strong> via
+                    Storybook et standardisation de composants réutilisables
+                  </li>
+                  <li>
+                    Collaboration en anglais avec équipes produit (PO, QA,
+                    back-end) en méthodologie <strong>SCRUM</strong>
+                  </li>
+                </ul>
+
+                <div className="timeline-stack">
+                  <span className="stack-badge">Vue.js</span>
+                  <span className="stack-badge">Tailwind CSS</span>
+                  <span className="stack-badge">Storybook</span>
+                  <span className="stack-badge">Figma</span>
+                  <span className="stack-badge">Jira</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <span className="timeline-date">
+                  Septembre 2018 — Septembre 2019
+                </span>
+                <h3>Co-fondateur & Technicien · Smartfix</h3>
+                <span className="timeline-place">Bruxelles</span>
+
+                <ul className="timeline-list">
+                  <li>
+                    Réparation smartphones & PC, diagnostic hardware / software
+                  </li>
+                  <li>Maintenance informatique et optimisation de systèmes</li>
+                  <li>
+                    Installation réseau et configuration de postes à domicile
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-content">
+                <span className="timeline-date">
+                  Septembre 2010 — Juillet 2018
+                </span>
+                <h3>Technicien Audiovisuel · Groupe ESRA</h3>
+                <span className="timeline-place">Paris</span>
+
+                <ul className="timeline-list">
+                  <li>
+                    Gestion et maintenance de matériel audiovisuel &
+                    informatique
+                  </li>
+                  <li>
+                    Installation et configuration de studios d’enregistrement
+                  </li>
+                  <li>Support technique auprès des étudiants et enseignants</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -201,8 +261,31 @@ function Home() {
       </section>
 
       <section className="section" id="contact">
-        <div className="container">
+        <div className="container contact-section">
           <h2>Contact</h2>
+          <div className="contact-list">
+            <button
+              className="btn secondary contact-item"
+              onClick={() =>
+                window.open(
+                  "https://www.linkedin.com/in/guilhem-saclier-a3704a1b9/",
+                  "_blank",
+                )
+              }
+            >
+              <img src={linkedinLogo} alt="LinkedIn" className="contact-logo" />
+              <span>LinkedIn</span>
+            </button>
+            <button
+              className="btn secondary contact-item"
+              onClick={() =>
+                window.open("https://github.com/SGuilhem", "_blank")
+              }
+            >
+              <img src={githubLogo} alt="GitHub" className="contact-logo" />
+              <span>GitHub</span>
+            </button>
+          </div>
           <p>Un projet en tête ? Discutons-en !</p>
           <button
             className="btn secondary"
