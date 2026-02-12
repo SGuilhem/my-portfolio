@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import heroPhoto from "../assets/photo.png";
+import heroPhoto from "../assets/photo1.jpeg";
 import heroPhoto2 from "../assets/photo2.jpeg";
 import pronosJudo1 from "../assets/Thumbnails/PronosJudo1.png";
 import interbudo1 from "../assets/Thumbnails/Interbudo1.png";
