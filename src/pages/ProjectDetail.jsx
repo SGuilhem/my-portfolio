@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import pronosJudo1 from "../assets/Thumbnails/PronosJudo1.png";
 import pronosJudo2 from "../assets/Thumbnails/PronosJudo2.png";
 import pronosJudo3 from "../assets/Thumbnails/PronosJudo3.png";
+import pronosJudo4 from "../assets/Thumbnails/PronosJudo4.png";
 import interbudo1 from "../assets/Thumbnails/Interbudo1.png";
 import interbudo2 from "../assets/Thumbnails/Interbudo2.png";
 import interbudo3 from "../assets/Thumbnails/Interbudo3.png";
@@ -19,7 +20,7 @@ const projectsData = {
     ],
     technologies: ["VueJS", "JavaScript", "NodeJS", "API REST", "Tailwind CSS"],
     link: "https://pronos-judo.onrender.com/",
-    screenshots: [pronosJudo1, pronosJudo2, pronosJudo3],
+    screenshots: [pronosJudo1, pronosJudo2, pronosJudo3, pronosJudo4],
   },
   interbudo: {
     title: "Site du Club de Judo - Interbudo",
