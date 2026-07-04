@@ -126,11 +126,11 @@ function Home() {
                 Curieux de nature, j'aime découvrir de nouvelles cultures à
                 travers mes voyages, notamment en Asie, où j'ai développé un
                 goût particulier pour la gastronomie locale. En dehors du code,
-                je pratique le judo depuis bientôt 20 ans (ceinture noire) et me
+                je pratique le judo depuis l'enfance(ceinture noire) et me
                 lance dans le triathlon par défi personnel.
               </p>
 
-              <div className="about-stats">
+              {/* <div className="about-stats">
                 <div className="stat">
                   <span className="stat-number">3</span>
                   <span className="stat-label">Ans d'expérience</span>
@@ -143,7 +143,7 @@ function Home() {
                   <span className="stat-number">2</span>
                   <span className="stat-label">Projets perso</span>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             <div className="about-visual">
