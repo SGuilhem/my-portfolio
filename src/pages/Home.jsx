@@ -74,7 +74,7 @@ function Home() {
               </span>
             </div>
             <p className="hero-desc">
-              Je conçois des interfaces web modernes et des projets concrets.
+              J'aime concevoir des interfaces qui sont aussi agréables à utiliser qu'à développer.
             </p>
           </div>
 
@@ -126,7 +126,7 @@ function Home() {
                 Curieux de nature, j'aime découvrir de nouvelles cultures à
                 travers mes voyages, notamment en Asie, où j'ai développé un
                 goût particulier pour la gastronomie locale. En dehors du code,
-                je pratique le judo depuis l'enfance(ceinture noire) et me
+                je pratique le judo depuis l'enfance (ceinture noire) et me
                 lance dans le triathlon par défi personnel.
               </p>
 
@@ -177,7 +177,7 @@ function Home() {
               </div>
               <div className="tl-divider" />
               <div className="tl-right">
-                <span className="tl-tag">CDN · Paris</span>
+                <span className="tl-tag">Paris</span>
                 <h3 className="tl-title">Développeur Front-End</h3>
                 <span className="tl-company">
                   Volatil — Mission Philip Morris International
