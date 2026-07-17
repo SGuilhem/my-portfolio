@@ -357,51 +357,6 @@ function Home() {
         </div>
       </section>
 
-      <div className="banner-shell">
-      <div className="banner-glow banner-glow--one" />
-      <div className="banner-glow banner-glow--two" />
-
-      <section className="banner">
-        <div className="banner-copy">
-          <p className="banner-kicker">Portfolio · Frontend Developer</p>
-          <h1 className="banner-title">Création d’interfaces web modernes.</h1>
-          <p className="banner-text">
-            Vue, React, TypeScript, Tailwind et une attention particulière au détail.
-          </p>
-        </div>
-
-        <div className="banner-skills">
-          {skills.map(({ logo, logoDark, name, themeable, inProgress }) => (
-            <div key={name} className="skill-pill">
-              <div className="skill-icon-wrap">
-                {themeable ? (
-                  <>
-                    <img
-                      src={logo}
-                      alt={name}
-                      className="skill-icon skill-icon--light"
-                    />
-                    <img
-                      src={logoDark}
-                      alt={name}
-                      className="skill-icon skill-icon--dark"
-                    />
-                  </>
-                ) : (
-                  <img src={logo} alt={name} className="skill-icon" />
-                )}
-              </div>
-
-              <div className="skill-meta">
-                <span className="skill-name">{name}</span>
-                {inProgress && <span className="skill-badge">En cours</span>}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-
       {/* ===== COMPÉTENCES ===== */}
       <section className="section" id="skills">
         <div className="container">
