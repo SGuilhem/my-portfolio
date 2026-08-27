@@ -7,6 +7,7 @@ import pronosJudo4 from "../assets/Thumbnails/PronosJudo4.png";
 import interbudo1 from "../assets/Thumbnails/Interbudo1.png";
 import interbudo2 from "../assets/Thumbnails/Interbudo2.png";
 import interbudo3 from "../assets/Thumbnails/Interbudo3.png";
+import interbudo4 from "../assets/Thumbnails/Interbudo4.png";
 import "../App.css";
 
 const projectsData = {
@@ -26,16 +27,15 @@ const projectsData = {
   },
   interbudo: {
     title: "Interbudo",
-    year: "2024",
+    year: "2025",
     role: "Développeur Front-End",
     description: [
       "Interbudo est un site vitrine créé pour un club de judo local.",
-      "Il présente les horaires, les lieux des entraînements, les informations sur les dirigeants, les professeurs, les modalités d'inscription, calendriers du club, les partenaires et les contacts.",
-      "C'est un projet complet alliant design moderne et informations pratiques pour les membres du club.",
+      "Il présente les actualités du club,les horaires, les lieux des entraînements, les informations sur les dirigeants, les professeurs, quelques articles, les modalités d'inscription, calendriers du club, les partenaires et les contacts.",
     ],
     technologies: ["VueJS", "HTML", "CSS", "JavaScript", "Tailwind CSS"],
-    link: "https://sguilhem.github.io/interbudo/",
-    screenshots: [interbudo1, interbudo2, interbudo3],
+    link: "https://interbudo.fr/",
+    screenshots: [interbudo1, interbudo2, interbudo3, interbudo4],
   },
 };
 
